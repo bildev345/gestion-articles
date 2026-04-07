@@ -20,7 +20,7 @@ return new class extends Migration
             $table->decimal('total_ht', 15, 2)->default(0);
             $table->decimal('total_tva', 15, 2)->default(0);
             $table->decimal('total_ttc', 15, 2)->default(0);
-             $table->string('mode_reglement')->nullable()->after('total_ttc');// manuel ou input select
+             $table->string('mode_reglement')->nullable();
             $table->timestamps();
         });
     }
